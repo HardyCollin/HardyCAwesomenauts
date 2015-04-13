@@ -70,3 +70,19 @@ game.ExperienceManager = Object.extend({
         me.save.exp = game.data.exp;
     }
 });
+
+game.SpendGold = Object.extend({
+    init: function(x, y, settings){
+        this.now = new Date().getTime();
+        this.lastCreep = new Date().getTime();
+        this.paused = false;
+        this.alwaysUpdate = true;
+    },
+    
+    update: function(){
+        
+        return true;
+    }
+    
+    
+});
