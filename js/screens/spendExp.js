@@ -26,26 +26,26 @@ game.SpendExp = me.ScreenObject.extend({
                 this.font.draw(renderer.getContext(), "F4: INCREASE STARTING HEALTH", this.pos.x, this.pos.y + 250);
 
             }
-            
+
         })));
-        
-        this.handler = me.event.subscribe(me.event.KEYDOWN, function(action, keyCode, edge){
-            if (action === "F1"){
-                
+
+        this.handler = me.event.subscribe(me.event.KEYDOWN, function(action, keyCode, edge) {
+            if (action === "F1") {
+
             }
-            else if(action === "F2"){
-                
+            else if (action === "F2") {
+
             }
-            else if(action === "F3"){
-                
-            }else if(action === "F4"){
-                
-            }else if(action === "F5"){
+            else if (action === "F3") {
+
+            } else if (action === "F4") {
+
+            } else if (action === "F5") {
                 me.state.change(me.state.PLAY);
             }
         });
-        
-   },
+
+    },
     /**	
      *  action to perform when leaving this screen (state change)
      */
