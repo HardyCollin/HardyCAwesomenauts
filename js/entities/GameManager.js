@@ -114,12 +114,13 @@ game.SpendGold = Object.extend({
                 this.alwaysUpdate = true;
             },
             draw: function(renderer) {
-                this.font.draw(renderer.getContext(), "Press F1-F6 to buy, B to Exit", this.pos.x + 400, this.pos.y);
-                this.font.draw(renderer.getContext(), "First buy", this.pos.x + 450, this.pos.y + 50);
-                this.font.draw(renderer.getContext(), "second buy", this.pos.x + 460, this.pos.y + 100);
-                this.font.draw(renderer.getContext(), "third buy", this.pos.x + 470, this.pos.y + 150);
-                this.font.draw(renderer.getContext(), "fourth buy", this.pos.x + 480, this.pos.y + 200);
-                this.font.draw(renderer.getContext(), "fifth buy", this.pos.x + 490, this.pos.y + 250);
+                this.font.draw(renderer.getContext(), "Press F1-F6 to buy, B to Exit. Current Gold:" + game.data.gold.toString(), this.pos.x + 200, this.pos.y);
+                this.font.draw(renderer.getContext(), "Skill 1: Increase Damage. Current Level:" + game.data.skill1 + " Cost: " + ((game.data.skill1 + 1) * 10), this.pos.x + 150, this.pos.y + 50);
+                this.font.draw(renderer.getContext(), "Skill 2: Run Faster. Current Level:" + game.data.skill2 + " Cost: " + ((game.data.skill2 + 1) * 10), this.pos.x + 160, this.pos.y + 100);
+                this.font.draw(renderer.getContext(), "Skill 3: Increase Health. Current Level:" + game.data.skill3 + " Cost: " + ((game.data.skill3 + 1) * 10), this.pos.x + 170, this.pos.y + 150);
+                this.font.draw(renderer.getContext(), "Q Ability: Speed Burst. Current Level:" + game.data.ability1 + " Cost: " + ((game.data.ability1 + 1) * 10), this.pos.x + 180, this.pos.y + 200);
+                this.font.draw(renderer.getContext(), "W Ability: Eat Your Creep for Health. Current Level:" + game.data.ability2 + " Cost: " + ((game.data.ability2 + 1) * 10), this.pos.x + 190, this.pos.y + 250);
+                this.font.draw(renderer.getContext(), "E Ability: Throw Spear Current Level:" + game.data.ability3 + " Cost: " + ((game.data.ability3 + 1) * 10), this.pos.x + 200, this.pos.y + 300);
 
             }
 
