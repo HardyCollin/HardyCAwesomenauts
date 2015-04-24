@@ -37,7 +37,7 @@ var game = {
         pausePos: "",
         buyscreen: "",
         buytext: ""
-   },
+    },
     // Run on page load.
     "onload": function() {
         // Initialize the video.
